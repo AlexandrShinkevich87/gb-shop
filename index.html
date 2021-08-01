@@ -14,15 +14,87 @@
         <div class="header__left">
             <a href="index.html" class="logo"><img src="img/logo.png" alt="logo">BRAN<span>D</span></a>
             <form action="#" class="header__form">
-                <div class="browse pointer">
+                <div class="browse pointer menu__list">
                     <a href="#">Browse <i class="fas fa-caret-down"></i></a>
-                    <div class="drop drop_browser"></div>
+                    <div class="drop drop_browser">
+                        <div class="drop__flex">
+                            <h3 class="drop__title">WOMEN</h3>
+                            <ul class="drop__menu">
+                                <li><a class="drop__link" href="#">Dresses</a></li>
+                                <li><a class="drop__link" href="#">Tops</a></li>
+                                <li><a class="drop__link" href="#">Sweaters/Knits</a></li>
+                                <li><a class="drop__link" href="#">Jackets/Coats</a></li>
+                                <li><a class="drop__link" href="#">Blazers</a></li>
+                                <li><a class="drop__link" href="#">Denim</a></li>
+                                <li><a class="drop__link" href="#">Leggings/Pants</a></li>
+                                <li><a class="drop__link" href="#">Skirts/Shorts</a></li>
+                                <li><a class="drop__link" href="#">Accessories</a></li>
+                            </ul>
+                            <h3 class="drop__title">MEN</h3>
+                            <ul class="drop__menu">
+                                <li><a class="drop__link" href="#">Tees/Tank tops</a></li>
+                                <li><a class="drop__link" href="#">Shirts/Polos</a></li>
+                                <li><a class="drop__link" href="#">Sweaters</a></li>
+                                <li><a class="drop__link" href="#">Sweatshirts/Hoodies</a></li>
+                                <li><a class="drop__link" href="#">Blazers</a></li>
+                                <li><a class="drop__link" href="#">Jackets/Vests</a></li>
+                            </ul>
+                        </div>
+                    </div>
                     <input type="text" placeholder="Search for Item...">
                     <button class="pointer"><i class="fas fa-search"></i></button>
                 </div>
             </form>
         </div>
-        <div class="header__right"></div>
+        <div class="header__right">
+            <div class="shopping-cart-wrap menu__list">
+                <a href="shopping-cart.html"><img class="header__cart" src="img/cart.svg" alt="cart"></a>
+                <div class="drop drop_cart">
+                    <div class="drop__flex">
+                        <div class="drop-cart-item">
+                            <a href="single_page.html"><img src="img/cart_product_1.jpg" alt="Product"></a>
+                            <div class="drop-item-descr">
+                                <b>REBOX ZANE</b>
+                                <div class="drop-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p>1 X 250$</p>
+                            </div>
+                            <a href="#" class="delete-product drop-delete">
+                                <div class="delete-product__cross"></div>
+                            </a>
+                        </div>
+                        <div class="drop-cart-item">
+                            <a href="single-page.html"><img src="img/cart_product_2.jpg" alt="Product"></a>
+                            <div class="drop-item-descr">
+                                <b>REBOX ZANE</b>
+                                <div class="drop-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p>1 X 250$</p>
+                            </div>
+                            <a href="#" class="delete-product drop-delete">
+                                <div class="delete-product__cross"></div>
+                            </a>
+                        </div>
+                        <div class="drop-cart-item total">
+                            <b>TOTAL</b>
+                            <b>$500</b>
+                        </div>
+                        <a href="shopping-cart.html" class="drop-btn drop-checkout">CHECKOUT</a>
+                        <a href="shopping-cart.html" class="drop-btn drop-go">GO TO CART</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
 </body>
