@@ -241,6 +241,21 @@ a:hover {
     transition: transform 0.3s;
 }
 
+/*.drop-cart-item .drop-delete {
+    margin: 0;
+}*/
+
+.drop-cart-item .drop-stars {
+    font-size: 12px;
+    color: #E4AF48;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.drop-cart-item:hover {
+    transform: scale(1.03);
+}
+
 .drop-cart-item .drop-stars {
     font-size: 12px;
     color: #E4AF48;
@@ -251,4 +266,108 @@ a:hover {
 .drop-item-descr {
     flex-grow: 1;
     margin-left: 16px;
+}
+
+.drop-btn {
+    display: block;
+    color: #4A4A4A;
+    border: solid 1px #EEEEEE;
+    /*box-sizing: border-box;*/
+    padding: 20px 0;
+    text-align: center;
+    /*transition: all 0.3s;*/
+}
+
+.drop-btn:hover {
+    border: solid 1px #4A4A4A;
+}
+
+.delete-product {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #C0C0C0;
+    /*transition: background-color 0.3s;*/
+}
+
+.delete-product:hover {
+    background-color: #F16C7F;
+}
+
+/*.delete-product__cross {*/
+/*    display: block;*/
+/*    width: 16px;*/
+/*    height: 16px;*/
+/*    !*transition: transform 0.3s ease-in-out;*!*/
+/*}*/
+
+/*.delete-product__cross:hover {*/
+/*    transform: scale(0);*/
+/*}*/
+
+.delete-product__cross::before {
+    content: "";
+    position: absolute;
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    height: 0;
+    border-top: 1px solid #ffffff;
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+
+.delete-product__cross::after {
+    content: "";
+    position: absolute;
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    height: 0;
+    border-top: 1px solid #ffffff;
+    transform: rotate(-45deg);
+    transform-origin: center;
+}
+
+.drop-checkout {
+    color: #F16C7F;
+    border: solid 1px #F16C7F;
+    margin-bottom: 10px;
+}
+
+.drop-checkout:hover {
+    color: #ffffff;
+    background-color: #F16C7F;
+    border: solid 1px #F16C7F;
+}
+
+.header__right .button {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: #F16C7F;
+    letter-spacing: 0.38px;
+    height: 38px;
+    padding-left: 19px;
+    padding-right: 19px;
+    line-height: 38px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.header__right .button:hover {
+    color: #F16C7F;
+    background-color: #ffffff;
+    outline: 1px solid #F16C7F;
 }
