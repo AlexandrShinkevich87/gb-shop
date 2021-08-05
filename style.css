@@ -371,3 +371,70 @@ a:hover {
     background-color: #ffffff;
     outline: 1px solid #F16C7F;
 }
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.menu__list {
+    position: relative;
+}
+
+.drop__img {
+    height: 118px;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 22px;
+}
+
+.menu__list .menu__link {
+    color: #222222;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+
+.menu__link:hover {
+    color: #F16C7F;
+}
+
+.promo {
+    height: 613px;
+    background-color: #e8e8e8;
+}
+
+.promo-content {
+    background-image: url(img/brand_back.jpg);
+    height: 100%;
+    background-position: 0 -51px;
+}
+
+.promo__content {
+    margin-top: 223px;
+    float: left;
+    border-left: 12px solid #F16C7F;
+    padding-left: 12px;
+}
+
+.promo__big {
+    color: #222222;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 45px;
+    margin-bottom: 15px;
+}
+
+.promo__mini {
+    color: #222222;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 31px;
+}
