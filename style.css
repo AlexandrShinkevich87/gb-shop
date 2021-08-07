@@ -438,3 +438,67 @@ a:hover {
     text-transform: uppercase;
     line-height: 31px;
 }
+
+.catalog {
+    margin-top: 98px;
+}
+
+.catalog-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog_col {
+    width: 50%;
+    margin: 0 10px;
+    position: relative;
+    /*perspective: 700px;*/
+}
+
+.block_1 {
+    display: block;
+    background-image: url(img/ban_1.jpg);
+    background-repeat: no-repeat;
+    height: 542px;
+    margin-bottom: 20px;
+}
+
+.block_2 {
+    display: block;
+    background-image: url(img/ban_2.jpg);
+    background-repeat: no-repeat;
+    background-position: 149px -31px;
+    background-color: #dadad2;
+    height: 261px;
+}
+
+.block_3 {
+    display: block;
+    background-image: url(img/ban_3.jpg);
+    height: 261px;
+    margin-bottom: 20px;
+}
+
+.block_4 {
+    display: block;
+    background-image: url(img/ban_4.jpg);
+    height: 542px;
+}
+
+.bage {
+    background-color: #ffffff;
+    margin-top: 26px;
+    padding: 14px 14px 10px 18px;
+    float: left;
+}
+
+.catalog_col h3 {
+    font-size: 18px;
+    color: #222222;
+}
+
+.catalog_col h1 {
+    font-size: 30px;
+    letter-spacing: 0.8px;
+    color: #F16C7F;
+}
