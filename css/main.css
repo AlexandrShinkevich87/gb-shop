@@ -576,6 +576,7 @@ body {
 }
 .offer__item:hover {
   filter: brightness(0.5);
+  transform: scale(1.03);
 }
 .offer__title {
   padding-top: 25px;
@@ -641,12 +642,14 @@ body {
   width: 261px;
   height: 364px;
   margin-bottom: 60px;
+  transition: 0.3s;
 }
 .items__card:hover .items__info {
   opacity: 1;
 }
 .items__card:hover {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
 }
 .items__info {
   width: 100%;
