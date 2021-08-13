@@ -541,7 +541,7 @@ body {
 }
 .offer__item {
   position: relative;
-  transition: filter 0.2s;
+  transition: 0.3s;
 }
 .offer__item-offer1 {
   width: 560px;
