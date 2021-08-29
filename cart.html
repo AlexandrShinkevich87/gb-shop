@@ -5,17 +5,18 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Single Page</title>
+	<title>Shopping Cart</title>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/single.css">
+	<link rel="stylesheet" href="css/cart.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
+
 	<header class="header">
 		<div class="container">
 			<div class="header__wrapper">
@@ -52,7 +53,7 @@
 					</details>
 
 					<form action="#" class="search">
-						<input class="search__input" type="text" placeholder="Search for Item..." required>
+						<input class="search__input" type="text" placeholder="Search for Item...">
 						<button class="search__btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
 					</form>
 				</div>
@@ -99,7 +100,7 @@
 								<p>total</p>
 								<p>$500.00</p>
 							</div>
-							<a href="checkout.html" class="basket__check">checkout</a>
+							<a href="#" class="basket__check">checkout</a>
 							<a href="cart.html" class="basket__cart">go to cart</a>
 
 						</div>
@@ -414,158 +415,154 @@
 		</div>
 	</div>
 
-	<section class="product">
-		<div class="product__left">
-			<i class="fa fa-chevron-left" aria-hidden="true"></i>
-		</div>
-		<div class="product__right">
-			<i class="fa fa-chevron-right" aria-hidden="true"></i>
-		</div>
-
-		<div class="container product__wrapper">
-			<div class="product__img">
-				<img src="img/product.jpg" alt="#">
-			</div>
-		</div>
-	</section>
-
-	<section class="description">
-		<div class="container description__wrapper">
-			<div class="description__title">
-				<h3>WOMEN COLLECTION</h3>
-				<div class="description__line">
-					<div class="description__grey"></div>
-					<div class="description__red"></div>
-					<div class="description__grey"></div>
-				</div>
-				<p>Moschino Cheap And Chic</p>
-			</div>
-			<div class="description__info">
-				Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate
-				collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather
-				than exceptional portals.
-			</div>
-			<div class="description__material">
-				<p>MATERIAL: <span>COTTON</span></p>
-				<p>DESIGNER: <span>BINBURHAN</span></p>
-			</div>
-			<div class="description__price">
-				$561
-			</div>
-			<form action="#" class="description__form">
-				<div class="description__box">
-					<div class="description__color">
-						CHOOSE COLOR <br>
-						<div class="select">
-							<div class="select__header">
-								<div class="select__item-color"></div>
-								<span class="select__current">red</span>
-								<div class="select__icon"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-							</div>
-
-							<div class="select__body">
-								<div class="select__item">
-									<div class="select__item-red"></div>
-									<span>red</span>
-								</div>
-								<div class="select__item">
-									<div class="select__item-yellow"></div>
-									<span>yellow</span>
-								</div>
-								<div class="select__item">
-									<div class="select__item-blue"></div>
-									<span>blue</span>
-								</div>
-								<div class="select__item">
-									<div class="select__item-black"></div>
-									<span>black</span>
-								</div>
-							</div>
-						</div>
-						<!-- <select name="color" size="1">
-
-							<option value="red">red</option>
-							<option value="yellow">yellow</option>
-							<option value="blue">blue</option>
-							<option value="black">black</option>
-						</select> -->
-
-					</div>
-
-					<div class="description__size">
-						CHOOSE SIZE <br>
-						<select name="size">
-							<option value="xs">xs</option>
-							<option value="s">s</option>
-							<option value="m">m</option>
-							<option value="l">l</option>
-							<option value="xl">xl</option>
-							<option value="xxl" selected>xxl</option>
-						</select>
-					</div>
-
-					<div class="description__quantity">
-						QUANTITY <br>
-						<input type="text">
-					</div>
-				</div>
-				<div class="description__button">
-					<button type="submit" class="description__btn">
-						<i class="material-icons">
-							shopping_cart
-						</i>Add to Cart</button>
-				</div>
-			</form>
-		</div>
-	</section>
-
-	<section class="also">
+	<section class="cart">
 		<div class="container">
-			<h3 class="also__title">you may like also</h3>
-			<div class="items__wrapper">
-				<div class="items__card">
-					<a href="#" class="items__info-link" target="_blank">
-						<img src="img/item9.jpg" alt="item1" class="items__img">
-						<span class="items__name">Mango People T-shirt</span><br>
-						<span class="items__price">$52.00</span>
-					</a>
-					<div class="items__info">
-						<a href="javascript:void(0);" class="items__link"> <img src="img/basket_w.png" alt="basket"
-								class="items__infoimg"> Add to Cart</a>
+			<div class="cart__wrapper">
+				<div class="cart__title cart__title-left">
+					<p class="cart__column cart__column-width">Product Details</p>
+
+				</div>
+				<div class="cart__title cart__title-right">
+					<p class="cart__column">unite Price</p>
+					<p class="cart__column">Quantity</p>
+					<p class="cart__column">shipping</p>
+					<p class="cart__column">Subtotal</p>
+					<p class="cart__column">ACTION</p>
+				</div>
+			</div>
+
+
+			<div class="cart__item">
+				<div class="cart__product">
+					<div class="cart__info">
+						<img src="img/cart1.jpg" alt="cart1" class="card__img">
+					</div>
+					<div class="cart__description">
+						<p class="cart__description-title">Mango People T-shirt</p>
+						<p class="cart__description-text">Color:<span>Red</span></p>
+						<p class="cart__description-text">Size:<span>Xll</span></p>
 					</div>
 				</div>
-				<div class="items__card">
-					<a href="#" class="items__info-link" target="_blank">
-						<img src="img/item10.jpg" alt="item2" class="items__img">
-						<span class="items__name">Mango People T-shirt</span><br>
-						<span class="items__price">$52.00</span>
-					</a>
-					<div class="items__info">
-						<a href="javascript:void(0);" class="items__link"> <img src="img/basket_w.png" alt="basket"
-								class="items__infoimg"> Add to Cart</a>
+				<div class="cart__data">
+					<div class="cart__price">
+						$150
+					</div>
+					<div class="cart__quantity">
+						<input type="number" class="cart__quantity-data" value="2" max="99">
+					</div>
+					<div class="cart__shipping">
+						FREE
+					</div>
+					<div class="cart__subtotal">
+						$300
+					</div>
+					<div class="cart__action">
+						<a href="javascript:void(0);" class="cart__action-link"><i class="fa fa-times-circle"
+								aria-hidden="true"></i></a>
+
 					</div>
 				</div>
-				<div class="items__card">
-					<a href="#" class="items__info-link" target="_blank">
-						<img src="img/item11.jpg" alt="item3" class="items__img">
-						<span class="items__name">Mango People T-shirt</span><br>
-						<span class="items__price">$52.00</span>
-					</a>
-					<div class="items__info">
-						<a href="javascript:void(0);" class="items__link"> <img src="img/basket_w.png" alt="basket"
-								class="items__infoimg"> Add to Cart</a>
+			</div>
+
+			<div class="cart__item">
+				<div class="cart__product">
+					<div class="cart__info">
+						<img src="img/cart2.jpg" alt="cart2" class="card__img">
+					</div>
+					<div class="cart__description">
+						<p class="cart__description-title">Mango People T-shirt</p>
+						<p class="cart__description-text">Color:<span>Red</span></p>
+						<p class="cart__description-text">Size:<span>Xll</span></p>
 					</div>
 				</div>
-				<div class="items__card">
-					<a href="#" class="items__info-link" target="_blank">
-						<img src="img/item12.jpg" alt="item4">
-						<span class="items__name">Mango People T-shirt</span><br>
-						<span class="items__price">$52.00</span>
-					</a>
-					<div class="items__info">
-						<a href="javascript:void(0);" class="items__link"> <img src="img/basket_w.png" alt="basket"
-								class="items__infoimg"> Add to Cart</a>
+				<div class="cart__data">
+					<div class="cart__price">
+						$150
 					</div>
+					<div class="cart__quantity">
+						<input type="number" class="cart__quantity-data" value="2" max="99">
+					</div>
+					<div class="cart__shipping">
+						FREE
+					</div>
+					<div class="cart__subtotal">
+						$300
+					</div>
+					<div class="cart__action">
+						<a href="javascript:void(0);" class="cart__action-link"><i class="fa fa-times-circle"
+								aria-hidden="true"></i></a>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="cart__item">
+				<div class="cart__product">
+					<div class="cart__info">
+						<img src="img/cart3.jpg" alt="cart3" class="card__img">
+					</div>
+					<div class="cart__description">
+						<p class="cart__description-title">Mango People T-shirt</p>
+						<p class="cart__description-text">Color:<span>Red</span></p>
+						<p class="cart__description-text">Size:<span>Xll</span></p>
+					</div>
+				</div>
+				<div class="cart__data">
+					<div class="cart__price">
+						$150
+					</div>
+					<div class="cart__quantity">
+						<input type="number" class="cart__quantity-data" value="2" max="99">
+					</div>
+					<div class="cart__shipping">
+						FREE
+					</div>
+					<div class="cart__subtotal">
+						$300
+					</div>
+					<div class="cart__action">
+						<a href="javascript:void(0);" class="cart__action-link"><i class="fa fa-times-circle"
+								aria-hidden="true"></i></a>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="cart__buttons">
+				<div class="cart__button">cLEAR SHOPPING CART</div>
+				<div class="cart__button">cONTINUE sHOPPING</div>
+			</div>
+
+			<div class="cart__information">
+				<div class="cart__adress">
+					<p class="cart__adress-title">Shipping Adress</p>
+					<form action="#" class="cart__adress-form">
+						<select class="cart__adress-form-country" name="country">
+							<option class="cart__adress-form-country-option" value="Bangladesh">Bangladesh</option>
+							<option class="cart__adress-form-country-option" value="Russian Federation">Russian
+								Federation</option>
+							<option class="cart__adress-form-country-option" value="Chile">Chile</option>
+							<option class="cart__adress-form-country-option" value="Egypt">Egypt</option>
+						</select>
+
+						<input type="text" class="cart__adress-form-text" placeholder="State">
+						<input type="text" class="cart__adress-form-text" placeholder="Postcode / Zip">
+						<button type="submit" class="cart__adress-form-btn">get a quote</button>
+					</form>
+				</div>
+				<div class="cart__discount">
+					<p class="cart__adress-title">coupon discount</p>
+					<p class="cart__discount-subtitle">Enter your coupon code if you have one</p>
+					<form action="#" class="cart__discount-form">
+						<input type="text" class="cart__discount-form-text" placeholder="State">
+						<button type="submit" class="cart__discount-form-btn">Apply coupon</button>
+					</form>
+				</div>
+				<div class="cart__total">
+					<p class="cart__total-suptitle">Sub total <span> $900</span></p>
+					<p class="cart__total-title">GRAND TOTAL <span>$900</span> </p>
+					<a href="javascript:void(0);" class="cart__total-btn">proceed to checkout</a>
+
 				</div>
 			</div>
 		</div>
@@ -646,6 +643,7 @@
 							<li><a href="javascript:void(0);">Promotion</a></li>
 						</ul>
 					</div>
+
 					<div class="footer__category">
 						<p class="footer__title">SHOP CATEGORY</p>
 						<ul class="footer__list">
@@ -680,47 +678,6 @@
 
 		</div>
 	</footer>
-
-	<script src="https://use.fontawesome.com/498429ed19.js"></script>
-
-	<script>
-		let select = function () {
-			let selectHeader = document.querySelectorAll('.select__header');
-			let selectItem = document.querySelectorAll('.select__item');
-			let selectItemColor = document.querySelectorAll('.select__item');
-
-			selectHeader.forEach(item => {
-				item.addEventListener('click', selectToggle)
-			});
-
-			selectItem.forEach(item => {
-				item.addEventListener('click', selectChoose)
-			});
-
-
-			function selectToggle() {
-				this.parentElement.classList.toggle('is-active');
-			}
-
-			function selectChoose() {
-				let text = this.innerText,
-					color = this.firstElementChild.className,
-					select = this.closest('.select'),
-					currentText = select.querySelector('.select__current');
-				currentColor = document.querySelector('.select__header').firstElementChild;
-				currentText.innerText = text;
-				currentColor.className = color;
-				select.classList.remove('is-active');
-
-			}
-
-
-		};
-
-
-		select();
-
-	</script>
 
 </body>
 
